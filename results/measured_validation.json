@@ -1,0 +1,58 @@
+{
+  "scope": "fixed-noise validation velocity loss, not video quality or trajectory accuracy",
+  "training_windows": 37,
+  "training_plays": 21,
+  "training_games": 19,
+  "validation_windows": 7,
+  "validation_plays": 4,
+  "validation_games": 4,
+  "sealed_test_windows": 7,
+  "sealed_test_plays": 4,
+  "sealed_test_games": 4,
+  "training_identity": "1442794c9fe6491c936e1ea7778a53ae78d17453013a7f3c3d43f118efc08b1f",
+  "dataset_manifest_sha256": "785c7807c038aacee3c7da33c352b362bfb6edde8cedb7486a5d27c0aaec979b",
+  "experts": {
+    "high_noise": {
+      "pretrained_step_0": 0.030484072331871306,
+      "adapted_step_32": 0.020289108423250064,
+      "relative_reduction_percent": 33.44357603417158,
+      "phases": [
+        {
+          "start_step": 0,
+          "stop_step": 8,
+          "development_fixed_noise_loss_before": 0.030484072331871306,
+          "development_fixed_noise_loss_after": 0.02276325784623623,
+          "source_report_sha256": "3f641291a7992859b1546798abde89c1890e430322bb8c49ce15be8f08fafcd0"
+        },
+        {
+          "start_step": 8,
+          "stop_step": 32,
+          "development_fixed_noise_loss_before": 0.02276325784623623,
+          "development_fixed_noise_loss_after": 0.020289108423250064,
+          "source_report_sha256": "c8165518088f46c0b92d58eceedce0226c988fc09bc9e92c30b91a3b85434e8b"
+        }
+      ]
+    },
+    "low_noise": {
+      "pretrained_step_0": 0.10639166831970215,
+      "adapted_step_32": 0.09817920412336077,
+      "relative_reduction_percent": 7.7190858326079566,
+      "phases": [
+        {
+          "start_step": 0,
+          "stop_step": 8,
+          "development_fixed_noise_loss_before": 0.10639166831970215,
+          "development_fixed_noise_loss_after": 0.10308640556676048,
+          "source_report_sha256": "03e9c3f0f10b19f9a667c8a96bc04caf702895f4598d175ae62d7736bb64dccf"
+        },
+        {
+          "start_step": 8,
+          "stop_step": 32,
+          "development_fixed_noise_loss_before": 0.10308640556676048,
+          "development_fixed_noise_loss_after": 0.09817920412336077,
+          "source_report_sha256": "a4dc5ca6c00f464f5790696a7ba321b60056ac586dd087a50d7a5466ee8c5fd2"
+        }
+      ]
+    }
+  }
+}

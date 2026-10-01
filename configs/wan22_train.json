@@ -1,0 +1,68 @@
+{
+  "schema_version": "nfl-route-full-backbone-v3",
+  "run_name": "routelab-wan22-reproduction",
+  "purpose": "bounded_full_backbone_learning_on_audited_subset_not_full_corpus",
+  "sources": {
+    "diffsynth": {
+      "repo": "https://github.com/modelscope/DiffSynth-Studio.git",
+      "commit": "c458cb42ab1ee838bff85c6546e14bb01c3571e9"
+    }
+  },
+  "models": {
+    "wan22_control": {
+      "repo_id": "alibaba-pai/Wan2.2-Fun-A14B-Control",
+      "revision": "297be6d520f54908e124be0298e2317ee50ffdf4",
+      "prefixes": [
+        "high_noise_model/",
+        "low_noise_model/",
+        "google/umt5-xxl/"
+      ],
+      "files": [
+        "Wan2.1_VAE.pth",
+        "models_t5_umt5-xxl-enc-bf16.pth"
+      ]
+    }
+  },
+  "video": {
+    "width": 832,
+    "height": 480,
+    "fps": 16,
+    "num_frames": 49
+  },
+  "training": {
+    "scope": "full_backbone",
+    "experts": [
+      "high_noise",
+      "low_noise"
+    ],
+    "world_size": 8,
+    "max_steps": 32,
+    "save_every": 16,
+    "learning_rate": 3e-06,
+    "warmup_steps": 4,
+    "weight_decay": 0.01,
+    "max_grad_norm": 1.0,
+    "seed": 42,
+    "control_dropout": 0.0,
+    "gradient_checkpointing": true,
+    "resume_proof_step": 8,
+    "gradient_accumulation_steps": 1,
+    "text_dropout": 0.0,
+    "sigma_boundary": 0.875,
+    "validation_every": 8,
+    "validation_examples": 7,
+    "checkpoint_seconds": 1800
+  },
+  "prompt": "Continuous real American football footage. Players move naturally on a consistent football field.",
+  "conditioning": {
+    "schema": "nfl-route-request-v2",
+    "required_inputs": [
+      "first_frame",
+      "trajectories"
+    ],
+    "renderer": "identity-trails-v1",
+    "model_control_source": "render_public_trajectories",
+    "known_latent_prefix": 1
+  },
+  "vae_precision_policy": "fp32_vae_bf16_latents_v1"
+}

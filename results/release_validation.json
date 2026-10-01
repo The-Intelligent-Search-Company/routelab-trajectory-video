@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-01",
+  "cpu_tests": {
+    "passed": 12,
+    "command": "PYTHONPATH=scripts python -m pytest -q"
+  },
+  "syntax_compile": "passed",
+  "cli_help": [
+    "prepare_inputs",
+    "prepare_dataset",
+    "generate",
+    "train_football_full_backbone",
+    "export_football_wan_checkpoint",
+    "cache_football_full_backbone"
+  ],
+  "environment": {
+    "os": "Darwin",
+    "machine": "arm64",
+    "python": "3.13.7",
+    "torch": "2.8.0",
+    "numpy": "2.2.6",
+    "opencv": "4.12.0",
+    "pillow": "11.3.0",
+    "pytest": "8.4.2",
+    "safetensors": "0.6.2"
+  },
+  "gpu_training_rerun": false,
+  "gpu_inference_rerun": false,
+  "paid_compute_launched": false,
+  "limitations": [
+    "CPU checks validate software contracts, not video quality or new-layout GPU execution.",
+    "Original private data and adapted checkpoints are not distributed."
+  ]
+}

@@ -1,0 +1,183 @@
+{
+  "scope": "First-party code extracted from the audited RouteLab checkout; no original git history or transcripts included.",
+  "extracted_files": [
+    {
+      "source_file": "scripts/football_trajectory_control.py",
+      "source_sha256": "d616c2dd6f21326f6c1da62e065844e176c599cd4db56bd984cb574aaaded7eb",
+      "extracted_functions": [
+        "sha256",
+        "write_json",
+        "project"
+      ],
+      "modified": true,
+      "release_sha256": "0e02cdac417352cb115a46f082a8ef3748e2f91b81448b1ae5e3fc7b6a114a19"
+    },
+    {
+      "source_file": "scripts/football_full_backbone_data.py",
+      "source_sha256": "7455d2c9ccb395f9698a053146ceb7703cc88576a9e026b47f5099504291e5c3",
+      "extracted_functions": [
+        "validate_config",
+        "split_guard",
+        "read_video",
+        "save_video",
+        "verify_dataset"
+      ],
+      "modified": true,
+      "release_sha256": "0cc65894080bd01015df2abcb6d83be727ede47ec0d6d01f5d9bf231a53cdfcd"
+    },
+    {
+      "source_file": "scripts/nfl_rollout_contract.py",
+      "source_sha256": "10aea712fb010351f3c53bbec6c4386418631df775a2bd9e4c7e2c05e3233fb3",
+      "extracted_functions": [
+        "validate_tracks",
+        "sample_tracks",
+        "initial_camera"
+      ],
+      "modified": true,
+      "release_sha256": "dd8b1bca323ce12810638d923685bd2066bfcff3783cd17b818178798b70af7f"
+    },
+    {
+      "source_file": "scripts/nfl_preprocessing/__init__.py",
+      "source_sha256": "4734e61392a841da8a42acaee05209441fc5aceb8fe3529401b13de69530154f",
+      "extracted_functions": null,
+      "modified": false,
+      "release_sha256": "4734e61392a841da8a42acaee05209441fc5aceb8fe3529401b13de69530154f"
+    },
+    {
+      "source_file": "scripts/nfl_preprocessing/common.py",
+      "source_sha256": "61ae6f75a404fe6f6a90c6eee8a62d4ab0b380fd6bff6a058172909f2b59bc3b",
+      "extracted_functions": [
+        "IntegrityError",
+        "digest",
+        "atomic_json",
+        "inside",
+        "file_manifest",
+        "verify_files"
+      ],
+      "modified": true,
+      "release_sha256": "1428837b810d156630c85083f4fccab8c375da6c1122faa2ab5388a467d358f1"
+    },
+    {
+      "source_file": "scripts/nfl_preprocessing/media.py",
+      "source_sha256": "66b759007debb353249a494a472215fa96f25a423b107594c8f5e60da03d1619",
+      "extracted_functions": [
+        "validate_profile",
+        "probe_video",
+        "nearest_frames",
+        "letterbox_transform",
+        "transform_frame",
+        "decode_frames",
+        "player_color",
+        "render_control"
+      ],
+      "modified": true,
+      "release_sha256": "9e8ca5dd948f5e9dfa9a2b0b08873ba07f056daecddcd1b07d068a7366ed7998"
+    },
+    {
+      "source_file": "scripts/nfl_conditioning.py",
+      "source_sha256": "891a1068e3e6e00c239ce879c1d8c324a945f5a8a3f2ad3d48448b25e23f6e84",
+      "extracted_functions": [
+        "prepare_bundle",
+        "edit_routes",
+        "validate_bundle",
+        "control_rgb_frames"
+      ],
+      "modified": true,
+      "release_sha256": "69918e8571d568e3eda6e33a56460706d2e8076e1a8eb844f2f304679f9fcba4"
+    },
+    {
+      "source_file": "scripts/nfl_posttrain_sampling.py",
+      "source_sha256": "42f51178c547b2bbc2a3f70bfeed37e069c8057f31ad80d6dd98de5bb51e997c",
+      "extracted_functions": null,
+      "modified": false,
+      "release_sha256": "42f51178c547b2bbc2a3f70bfeed37e069c8057f31ad80d6dd98de5bb51e997c"
+    },
+    {
+      "source_file": "scripts/nfl_training_loss.py",
+      "source_sha256": "1ef66f5f699a67fbe582420a744c52288fd7c01b696f6038c46d3a8c8d742368",
+      "extracted_functions": null,
+      "modified": false,
+      "release_sha256": "1ef66f5f699a67fbe582420a744c52288fd7c01b696f6038c46d3a8c8d742368"
+    },
+    {
+      "source_file": "scripts/football_wan_codec_precision.py",
+      "source_sha256": "60e9a8c4ef2aeb3f61dba0ebadb760e438e59e5a2c8ddac6ec6e549d115b43d3",
+      "extracted_functions": null,
+      "modified": false,
+      "release_sha256": "60e9a8c4ef2aeb3f61dba0ebadb760e438e59e5a2c8ddac6ec6e549d115b43d3"
+    },
+    {
+      "source_file": "scripts/nfl_rollout_offload.py",
+      "source_sha256": "58c5803ea3385fe5a003fadaa2a088fb4f29cdf90b3cbdef62397cc423b243a2",
+      "extracted_functions": null,
+      "modified": false,
+      "release_sha256": "58c5803ea3385fe5a003fadaa2a088fb4f29cdf90b3cbdef62397cc423b243a2"
+    },
+    {
+      "source_file": "scripts/cache_football_full_backbone.py",
+      "source_sha256": "8b9877ab5ecc8627859906ab767a0b6cba24d71a77fd4b11a52c2e7bc2a265f3",
+      "extracted_functions": null,
+      "modified": false,
+      "release_sha256": "8b9877ab5ecc8627859906ab767a0b6cba24d71a77fd4b11a52c2e7bc2a265f3"
+    },
+    {
+      "source_file": "scripts/nfl_distributed_checkpoint_publish.py",
+      "source_sha256": "6c8d644be9e39112cbada91a17b6d3dc69ae7d1c2e62a2787b505b5188a2ba7b",
+      "extracted_functions": null,
+      "modified": false,
+      "release_sha256": "6c8d644be9e39112cbada91a17b6d3dc69ae7d1c2e62a2787b505b5188a2ba7b"
+    },
+    {
+      "source_file": "scripts/football_wan_eval_common.py",
+      "source_sha256": "bc7f1b782912138e097e749cf5f03a71d59f5dd949fb678d8c3c3bf169929baf",
+      "extracted_functions": [
+        "tensor_digest",
+        "canonical_weights",
+        "denoise"
+      ],
+      "modified": true,
+      "release_sha256": "c9da2d254b9e633f50dcb681af05acdf77552d22db8bdf4a50f710b10e8f5d4f"
+    },
+    {
+      "source_file": "scripts/football_full_backbone_common.py",
+      "source_sha256": "2791de332e0fcd96655c3c36981290bc781da48ddcd593c71ba1567963808737",
+      "extracted_functions": [
+        "full_parameter_audit",
+        "expert_range",
+        "rng_state",
+        "set_rng_state",
+        "verify_checkpoint",
+        "latest_checkpoint",
+        "sampled_parameters",
+        "parameter_changes",
+        "gradient_samples"
+      ],
+      "modified": true,
+      "release_sha256": "f486d0db82b8b1ab5d643913db0e362bf91d5e15c97832be0ba195a99fc63bfa"
+    },
+    {
+      "source_file": "scripts/train_football_full_backbone.py",
+      "source_sha256": "7ba4f0d462d2a6929d1fc8c4c6feed117aa0cf1e934e9faa5fd23efc6d9e8964",
+      "extracted_functions": null,
+      "modified": true,
+      "release_sha256": "7312067ef690b653be1747ad9b30ea308a1ae5296318be624cf29a925b88a482"
+    },
+    {
+      "source_file": "scripts/export_football_wan_checkpoint.py",
+      "source_sha256": "c3b07cf381e14dcc52a511b4565b31e3cd4a7fb7c08cf3b9e04884b6e9113ea7",
+      "extracted_functions": null,
+      "modified": true,
+      "release_sha256": "5e2c9f19f55cadb27bebdb7172eb9aff3dfd878d0fc483473b7cfd0aa445af8c"
+    },
+    {
+      "source_file": "scripts/nfl_route_candidate.py",
+      "source_sha256": "ff6811be279659efafae7483ec97147947693d6f74f19dfe146930b269e7fb94",
+      "extracted_functions": [
+        "validate_component_shapes",
+        "install_components"
+      ],
+      "modified": true,
+      "release_sha256": "9a4e0505815ceaf6852fd6bbb01b13dd78abe9812b3c364c52857bfd195246be"
+    }
+  ]
+}

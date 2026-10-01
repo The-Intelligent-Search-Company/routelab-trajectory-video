@@ -1,0 +1,15 @@
+RouteLab trajectory-conditioned video research release
+Copyright 2026 The Intelligent Search Company
+
+First-party RouteLab code is provided under the Apache License, Version 2.0.
+The denoising loop and model integration follow DiffSynth-Studio by the
+ModelScope contributors, also licensed Apache-2.0. DiffSynth is a separately
+installed dependency; its source tree and model weights are not bundled.
+
+Pinned upstream code: https://github.com/modelscope/DiffSynth-Studio
+Revision: c458cb42ab1ee838bff85c6546e14bb01c3571e9
+Base model: https://huggingface.co/alibaba-pai/Wan2.2-Fun-A14B-Control
+Revision: 297be6d520f54908e124be0298e2317ee50ffdf4
+
+No rights in football footage, player tracking datasets, third-party marks,
+or model weights are granted by this code license. Such assets are excluded.

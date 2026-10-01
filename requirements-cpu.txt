@@ -1,0 +1,6 @@
+# Canonical serving renderer. Pixel digests depend on these versions.
+numpy==2.2.6
+opencv-python-headless==4.12.0.88
+Pillow==11.3.0
+pytest==8.4.2
+safetensors==0.6.2

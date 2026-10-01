@@ -1,0 +1,16 @@
+{
+  "video": {
+    "width": 832,
+    "height": 480,
+    "fps": 16,
+    "num_frames": 49
+  },
+  "vae_precision_policy": "fp32_vae_bf16_latents_v1",
+  "inference": {
+    "num_inference_steps": 50,
+    "cfg_scale": 5.0,
+    "sigma_shift": 5.0,
+    "switch_DiT_boundary": 0.875,
+    "negative_prompt": ""
+  }
+}
