@@ -73,4 +73,3 @@ def initial_camera(tracks, size):
     if np.quantile(errors,.9) > 5:
         raise ValueError('Initial player bindings disagree with field calibration')
     return h
-

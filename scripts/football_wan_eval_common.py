@@ -63,4 +63,3 @@ def denoise(models, model_fn, scheduler, latents, conditions, negative, *, cfg_s
         counts[name] += 1
         progress(index+1, name)
     return latents, counts
-

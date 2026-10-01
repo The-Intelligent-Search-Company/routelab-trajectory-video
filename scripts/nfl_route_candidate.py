@@ -24,4 +24,3 @@ def install_components(modules, paths):
         module.load_state_dict(weights, strict=True)
         del weights
         module.requires_grad_(False).eval()
-

@@ -27,4 +27,3 @@ def project(matrix: np.ndarray, points: np.ndarray) -> np.ndarray:
     out = np.full_like(points, np.nan)
     out[valid] = homogeneous[valid, :2] / homogeneous[valid, 2:]
     return out
-

@@ -108,4 +108,3 @@ def gradient_samples(model):
                 raise FloatingPointError('Nonfinite backbone gradient: ' + name)
             result[name] = float(torch.linalg.vector_norm(grad))
     return result
-

@@ -129,4 +129,3 @@ def render_control(tracks, profile, trail_seconds=.25):
                 cv2.circle(frame, point, 5, color, -1, cv2.LINE_AA)
         frames.append(frame)
     return frames
-

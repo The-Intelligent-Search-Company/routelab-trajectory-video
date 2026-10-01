@@ -162,4 +162,3 @@ def control_rgb_frames(bundle, request):
     if __import__('hashlib').sha256(frames.tobytes()).hexdigest() != request['control_pixel_sha256']:
         raise ValueError('Trajectory renderer changed')
     return frames[...,::-1].copy()
-

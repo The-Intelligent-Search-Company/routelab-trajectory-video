@@ -95,4 +95,3 @@ def verify_dataset(root):
     if manifest['future_rgb_in_controls'] is not False:
         raise ValueError('Future RGB leakage')
     return manifest
-

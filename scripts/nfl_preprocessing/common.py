@@ -54,4 +54,3 @@ def verify_files(root, files):
         path = inside(root, name)
         if not path.is_file() or path.stat().st_size != info['bytes'] or sha256(path) != info['sha256']:
             raise IntegrityError(f'Artifact integrity failure: {name}')
-
